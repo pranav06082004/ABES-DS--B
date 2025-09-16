@@ -1,35 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <style>
+        #div1{
+            width: 400px;
+            height: 400px;
+            background-color: rgb(208, 66, 66);
+        }
+    </style>
+   
 </head>
-<body>
+<body id="body1">
+    <button onclick="Skyblue()">Skyblue</button>
+    <button onclick="Green()">Green</button>
+    <button onclick="Red()">Red</button>
+
+
+
+
+
+    <!-- <div id="div1">
+        <button onclick="">Click</button>
+        <p id="para"></p>
+
+    </div> -->
     <script>
-        function greet() {
-            document.write("Hello, World!");
+        function Skyblue(){
+            document.getElementById("body1").style.backgroundColor="blue";
         }
+        function Green(){
+            document.getElementById("body1").style.backgroundColor="green";
+        }
+        function Red(){
+            document.getElementById("body1").style.backgroundColor="red";
+        }
+        
+           
 
-        greet();
-        var c=add(5,6);
-        document.write("<br>Sum is: " + c);
-        function add(a,b) {
-            return a+b;
-        }
 
-        document.write("<br>Product is: " + multiply(5,6));
-        function multiply(a,b) {
-            return a*b;
-        }
-        document.write("<br>Division is: " + divide(30,6));
-        function divide(a,b) {
-            return a/b;
-        }
-        document.write("<br>Subtraction is: " + subtract(30,6));
-        function subtract(a,b) {
-            return a-b;
-        }
+
+
+        // function changeColor(){
+        //     document.getElementById("div1").style.backgroundColor="yellow";
+        //     document.getElementById("para").innerHTML="Hello world";
+        // }
+        // document.querySelector("button").onclick=changeColor;
+        // function abes(){
+        //     document.write("hello world");
+        // }
+        // abes();
+        // function add(a,b){
+        //     return a+b;
+        // }
+        
+        // let c=add(5,6);
+        // document.write(c);
+        
+
+        // function sub(a,b){
+        //     return a-b;
+        // }
+        // let d=sub(5,6);
+        // document.write(d);
+
+        
+
+
+
+        
     </script>
+    
 </body>
 </html>
