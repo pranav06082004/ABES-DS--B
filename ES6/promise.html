@@ -8,13 +8,16 @@
 <body>
     <script>
         const promise = new Promise((resolve, reject) => {
-            let password = "12345";
-            if (password === "12345") {
-                resolve("Password is correct");
-            } else {
-                reject("Password is incorrect");
-            }
-        });
+            reject("Promise rejected");{
+
+        }
+        })
+        promise.then((log)=>{
+            console.log(log);
+        })
+        promise.catch((err)=>{
+            console.log(err);
+        })
     </script>
 </body>
 </html>
