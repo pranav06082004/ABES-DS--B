@@ -1,10 +1,17 @@
 const fs=require('fs');
 
-// fs.writeFileSync('./ds-b','Hello');
-// fs.writeFileSync('./abes.txt','Hello World!');
+fs.writeFile('./ds-b','Welcome to ds-b',()=>{ });
 
-const result=fs.readFileSync('./abes.txt','utf-8');
-console.log(result);
 
-const result2=fs.readFileSync('./ds-b','utf-8');
-console.log(result2);
+// const result=fs.readFileSync('./abes.txt','utf-8');
+// console.log(result);
+
+
+fs.readFile('./ds-b','utf-8',(err,result2)=>{
+    if(err){
+        console.log('Error',err);
+    }
+    else{
+        console.log(result2);
+    }
+});
