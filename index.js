@@ -1,4 +1,14 @@
-const fs=require('fs');
+const os=require('os');
+
+console.log('System:',os.platform());
+console.log('user info',os.userInfo());
+console.log('cpu', os.arch());
+console.log('free memory', os.freemem());
+console.log('total', os.totalmem());
+console.log('uptime', os.uptime());
+console.log('home dir', os.homedir());
+// const fs=require('fs');/
+
 
 // fs.writeFile('./a1','A1',()=>{ });
 // fs.writeFile('./b1','B1',()=>{ });
@@ -11,23 +21,23 @@ const fs=require('fs');
 // console.log(result);
 
 
-fs.readFile('./a1','utf-8',(err,result2)=>{
-    if(err){
-        console.log('Error',err);
-    }
-    else{
-        console.log(result2);
-    }
-});
+// fs.readFile('./a1','utf-8',(err,result2)=>{
+//     if(err){
+//         console.log('Error',err);
+//     }
+//     else{
+//         console.log(result2);
+//     }
+// });
 
-fs.readFile('./b1','utf-8',(err,result3)=>{
-    if(err){
-        console.log('Error',err);
-    }
-    else{
-        console.log(result3);
-    }
-});
+// fs.readFile('./b1','utf-8',(err,result3)=>{
+//     if(err){
+//         console.log('Error',err);
+//     }
+//     else{
+//         console.log(result3);
+//     }
+// });
 
 // fs.readFile('./c1','utf-8',(err,result4)=>{
 //     if(err){
@@ -64,12 +74,12 @@ fs.readFile('./b1','utf-8',(err,result3)=>{
 //     }
 // });
 
-fs.unlink('./a2',(err)=>{
-    if(err){
-        console.log('Error',err);
-    }
-    else{
-        console.log('File deleted successfully');
-    }   
-});
+// fs.unlink('./a2',(err)=>{
+//     if(err){
+//         console.log('Error',err);
+//     }
+//     else{
+//         console.log('File deleted successfully');
+//     }   
+// });
 
